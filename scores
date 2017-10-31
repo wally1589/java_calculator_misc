@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class scoresw3 
+{
+	public static void main(String[] args)
+	{
+		int[] scores;
+		int sum = 0;
+		double average = 0.0;
+		
+		scores = new int [10];
+		
+		for (int x = 0; x < 10; x++)
+		{
+			System.out.println("please enter a score for element " + x);
+			Scanner input = new Scanner(System.in);
+			scores[1] = input.nextInt();
+			sum = scores[1] + scores[2];
+		}
+		
+		sum = sum;
+		
+		System.out.println("the sum of thee score is " + sum + " and the average is " + average);
+		
+	}
+}
