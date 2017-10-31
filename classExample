@@ -1,0 +1,77 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class classExample 
+{
+	public double getX(double x) throws IOException
+	{
+		String input;
+		boolean done = false;
+		
+		
+		while(!done)
+		{
+			BufferedReader dataIn = new BufferedReader(new InputStreamReader(System.in));
+			System.out.println("please enter the first number: ");
+			input = dataIn.readLine();
+			
+			try
+			{
+				x = Double.parseDouble(input);
+				if(x <= 0) throw new NumberFormatException();
+				else done = true;
+			}
+			catch(NumberFormatException e)
+			{
+				System.out.println("the number you enter must be positve");
+			
+			}
+		}
+		return x;
+	}
+	public double getY(double y) throws IOException
+	{
+		String input;
+		boolean done = false;
+		
+		
+		while(!done)
+		{
+			BufferedReader dataIn = new BufferedReader(new InputStreamReader(System.in));
+			System.out.println("please enter the second number: ");
+			input = dataIn.readLine();
+			
+			try
+			{
+				y = Double.parseDouble(input);
+				if(y <= 0) throw new NumberFormatException();
+				else done = true;
+			}
+			catch(NumberFormatException e)
+			{
+				System.out.println("the number you enter must be positve");
+			
+			}
+		}
+		return y;
+	}
+	public void calculate(double x, double y, double sum, double difference)
+	{
+		if (x > 40)
+		{
+			sum = x + y;
+		}
+		else
+		{
+			difference = x - y;
+		}
+		
+		System.out.println(x);
+	}
+	public void finish()
+	{
+		System.exit(0);
+	}
+		
+}
