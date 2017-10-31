@@ -1,0 +1,41 @@
+
+
+import java.util.Scanner;
+
+
+public class weekinclass
+{
+		public static void main(String[]args)
+		{
+			int number1 = 0;
+			int number2 = 0;
+			int sum;
+			
+			System.out.println(" Please enter a whole number: ");
+			Scanner input = new Scanner(System.in);
+			number1 = input.nextInt();
+			
+			System.out.println(" Please enter a whole number: ");
+			Scanner input2 = new Scanner(System.in);
+			number2 = input.nextInt();
+			
+			sum = number1 + number2;
+			
+			if(sum == 0)
+			{
+				System.out.println("Your sum is " + sum + "and is neither positive or negative");
+			}	
+			else if (sum > 0)
+			{
+				System.out.println("Your sum is " + sum + " and is a positive number");
+				
+			}
+			else
+			{
+				System.out.println("Yout sum is " + sum +" and is a negative number");
+			}
+		}
+		
+}
+
+
